@@ -4,14 +4,18 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
+import postDetail from './container/postDetail';
 import postList from './container/postList';
+import {createBrowserHistory} from 'history'
+const history=createBrowserHistory();
 class App extends React.Component {
   render() {
     return (
-      <Router>
+      <Router history={history}>
         <div>
           <Switch>
             <Route exact component={postList} path="/" />
+            <Route exact component={postDetail} path="/post/:userId/:id" />
           </Switch>
         </div>
       </Router>
