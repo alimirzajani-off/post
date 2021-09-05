@@ -24,7 +24,7 @@ const PostList = () => {
         return Data.map(item => {
             return (
                 <li key={item.id}>
-                    <Link to={`/post/${item.userId}/${item.id}`}>
+                    <Link to={`/post/${item.id}`}>
                         {item.title}
                     </Link>
                 </li>

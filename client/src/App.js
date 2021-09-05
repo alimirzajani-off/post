@@ -15,7 +15,7 @@ class App extends React.Component {
         <div>
           <Switch>
             <Route exact component={postList} path="/" />
-            <Route exact component={postDetail} path="/post/:userId/:id" />
+            <Route exact component={postDetail} path="/post/:id" />
           </Switch>
         </div>
       </Router>
